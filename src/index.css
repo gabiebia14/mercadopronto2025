@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mobile-layout {
+  max-width: 428px;
+  margin: 0 auto;
+  background: white;
+  min-height: 100vh;
+  position: relative;
+}
+
+.mobile-layout .header {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  padding: 1rem;
+  color: white;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.mobile-layout .nav-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  max-width: 428px;
+  margin: 0 auto;
+}
+
+.mobile-layout .nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+}
+
+.mobile-layout .nav-tab.active {
+  color: #7c3aed;
+}
+
+.mobile-layout .nav-tab svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.mobile-layout .content {
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+.mobile-layout .card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-layout .chart-container {
+  height: 200px;
+  margin: 1rem 0;
+}
+
+@media (min-width: 429px) {
+  .mobile-layout {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.mobile-layout .recharts-responsive-container {
+  height: 300px !important;
+}
